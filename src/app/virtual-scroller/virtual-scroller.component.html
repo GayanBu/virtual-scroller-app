@@ -1,0 +1,5 @@
+<div #container [style.height]="height" [style.overflow-y]="'scroll'" (scroll)="onScroll($event)">
+    <div *ngFor="let item of (itemsToDisplay$ | async)">
+      {{ item.name }}
+    </div>
+  </div>
